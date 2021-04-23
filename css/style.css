@@ -53,6 +53,13 @@ p.tag-detail {
     justify-content: center;
 }
 
+.content-flip-section {
+    display: flex;
+    align-items : center;
+    justify-content: center;
+}
+
+
 .content-split-col {
     flex-basis: 50%;
 }
@@ -72,6 +79,12 @@ img{
     justify-content: center;
 }
 
+.container-navbar-mb {
+    width: 1200px;
+    /* display: flex; */
+    justify-content: center;
+}
+
 .navbar {
     font-weight: 200;
     font-size: 18px;
@@ -85,12 +98,32 @@ img{
     /* padding-top: 10px;
     padding-bottom: 5px; */
 }
-  
+
+.navbar-mb {
+    font-weight: 200;
+    font-size: 18px;
+    background-color: #161616;
+    position: fixed;
+    width:100%;
+    /* display: flex;
+    justify-content: center; */
+    top: 0;
+    z-index: 0;
+}
+
 .navbar a {
     display: flex;
     color: #f2f2f2;
     text-align: center;
     /* padding: 14px 16px; */
+    padding-left: 16px;
+    text-decoration: none;
+}
+
+.navbar-mb a {
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
     padding-left: 16px;
     text-decoration: none;
 }
@@ -117,11 +150,22 @@ img{
 .nav-li-col {
     flex-basis: 70%;
     display: flex;
-    margin-top: 8px;
+    margin-top: 35px;
+}
+
+.nav-li-col-mb {
+    flex-basis: 70%;
+    margin-top: 35px;
+    padding: 10px;
+    margin-top: 50px;
 }
 
 .nav-li-col .icon {
     display: none;
+}
+
+.nav-li-col .icon{
+    color: #f2f2f2;
 }
 
 
@@ -277,7 +321,6 @@ h1.clients-title {
 }
 
 
-
 /* section footer */
 .footer {
     height: 600px;
@@ -320,16 +363,23 @@ h6.footer-title {
         flex-wrap: wrap;
     }
 
-    .nav-li-col {
+    .nav-li-col a.text-hide {
         display: none;
     }
 
-    .nav-li-col .icon {
+    .nav-li-col a.icon {
         display: block;
+        margin-top: -15px;
+        margin-left: 80px;
+    }
+
+    .nav-img-col {
+        flex-basis: 100%;
     }
 
     .content-split-col {
         flex-basis: 80%;
+        width: 80%;
     }
 
     .portfolio-split-col {
@@ -353,6 +403,11 @@ h6.footer-title {
         font-size: 20px;
         line-height: 1.15;
     } 
+
+    .content-flip-section {
+        flex-direction: column-reverse;
+    }
+
 }
 
 
