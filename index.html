@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/style.css">
 
@@ -22,14 +23,18 @@
                     <a href="https://www.beeative.com/"><img class="logo-beeative" src="img/beeative_logo.png" alt=""></a>
                 </div>
 
-                <div class="nav-li-col">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Promotion</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">IG filter</a> </li>
-                    <li><a class="active" href="#">088-548-8824</a></li>
+                <div class="nav-li-col" id="myTopnav">
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Promotion</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contact</a>
+                    <a href="#">IG filter</a> 
+                    <a class="active" href="#">088-548-8824</a>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </div>
             </div>
         </section>
@@ -148,7 +153,7 @@
                 <!-- image row 1 -->
                 <div class="content-portfolio-section">
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_seat_finder.png">
+                        <img class="image" src="img/portfolio_seat_finder.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Seat Finder</div>
@@ -156,7 +161,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_kinza_gyoza.png">
+                        <img class="image" src="img/portfolio_kinza_gyoza.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Kinza Gyoza</div>
@@ -164,7 +169,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_cocomix.png">
+                        <img class="image" src="img/portfolio_cocomix.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Cocomix</div>
@@ -175,7 +180,7 @@
                 <!-- image row 2 -->
                 <div class="content-portfolio-section">
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_maison.png">
+                        <img class="image" src="img/portfolio_maison.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Maison</div>
@@ -183,7 +188,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_Kiata.png">
+                        <img class="image" src="img/portfolio_Kiata.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Kiata Diecasting</div>
@@ -191,7 +196,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_wrangler.png">
+                        <img class="image" src="img/portfolio_wrangler.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Wrangler</div>
@@ -202,7 +207,7 @@
                 <!-- image row 3 -->
                 <div class="content-portfolio-section">
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_icash.png">
+                        <img class="image" src="img/portfolio_icash.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">icash</div>
@@ -210,7 +215,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_nuadthai.png">
+                        <img class="image" src="img/portfolio_nuadthai.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Nuadthai</div>
@@ -218,7 +223,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_SFS.png">
+                        <img class="image" src="img/portfolio_SFS.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">SFS</div>
@@ -229,7 +234,7 @@
                 <!-- image row 4 -->
                 <div class="content-portfolio-section">
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_mandi.png">
+                        <img class="image" src="img/portfolio_mandi.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Mandi</div>
@@ -237,7 +242,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_mom.png">
+                        <img class="image" src="img/portfolio_mom.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Mom</div>
@@ -245,7 +250,7 @@
                     </div>
 
                     <div class="portfolio-split-col">
-                        <img src="img/portfolio_Amoya.png">
+                        <img class="image" src="img/portfolio_Amoya.png">
 
                         <div class="overlay-portfolio">
                             <div class="text-overlay">Amoya</div>
@@ -395,5 +400,17 @@
                 </div>
             </div>
         </section>
+
+        <!-- Javascript -->
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
     </body>
 </html>
