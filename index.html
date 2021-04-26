@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/style.css">
@@ -23,34 +25,35 @@
                 </div>
 
                 <div class="nav-li-col">
-                    <a class="text-hide" href="#">Home</a>
-                    <a class="text-hide" href="#">Service</a>
-                    <a class="text-hide" href="#">Promotion</a>
-                    <a class="text-hide" href="#">Portfolio</a>
-                    <a class="text-hide" href="#">Contact</a>
-                    <a class="text-hide" href="#">IG filter</a> 
-                    <a class="text-hide" href="#">088-548-8824</a>
+                    <a class="navbar-none" href="#">Home</a>
+                    <a class="navbar-none" href="#">Service</a>
+                    <a class="navbar-none" href="#">Promotion</a>
+                    <a class="navbar-none" href="#">Portfolio</a>
+                    <a class="navbar-none" href="#">Contact</a>
+                    <a class="navbar-none" href="#">IG filter</a> 
+                    <a class="navbar-none" href="#">088-548-8824</a>
 
-                    <a class="icon">
+                    <div class="hambar"><a>
                         <i class="fas fa-bars"></i>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <section class="navbar-mb">
-            <div class="container-navbar-mb">
-                <div class="nav-li-col-mb">
-                    <a class="text-hide" href="#">Home</a>
-                    <a class="text-hide" href="#">Service</a>
-                    <a class="text-hide" href="#">Promotion</a>
-                    <a class="text-hide" href="#">Portfolio</a>
-                    <a class="text-hide" href="#">Contact</a>
-                    <a class="text-hide" href="#">IG filter</a> 
-                    <a class="text-hide" href="#">088-548-8824</a>
                 </div>
             </div>
         </section>
+
+        <div class="navbar-mb">
+            <div class="container-navbar-mb">
+                <div class="nav-li-col-mb">
+                    <a class="navbar-none" href="#">Home</a>
+                    <a class="navbar-none" href="#">Service</a>
+                    <a class="navbar-none" href="#">Promotion</a>
+                    <a class="navbar-none" href="#">Portfolio</a>
+                    <a class="navbar-none" href="#">Contact</a>
+                    <a class="navbar-none" href="#">IG filter</a> 
+                    <a class="navbar-none" href="#">088-548-8824</a>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Section Banner Header -->
@@ -388,7 +391,6 @@
                         <img src="">
                     </div>
                 </div>
-
             </div>
         </section>  
 
@@ -413,6 +415,18 @@
                 </div>
             </div>
         </section>
+
+        <script>
+            $( document ).ready(function() {
+                $( ".hambar" ).click(function() {
+                    if ($(".navbar-mb").hasClass("open")){
+                    $(".navbar-mb").removeClass("open")
+                }else{
+                    $(".navbar-mb").addClass("open")
+                }
+                });       
+            });
+        </script>
 
     </body>
 </html>

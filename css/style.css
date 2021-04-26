@@ -109,6 +109,7 @@ img{
     justify-content: center; */
     top: 0;
     z-index: 0;
+    display:none;
 }
 
 .navbar a {
@@ -128,11 +129,7 @@ img{
     text-decoration: none;
 }
   
-.navbar a:hover {
-    color: #FFCA09;
-}
-
-.active {
+.navbar, .navbar-mb a:hover {
     color: #FFCA09;
 }
 
@@ -151,13 +148,14 @@ img{
     flex-basis: 70%;
     display: flex;
     margin-top: 35px;
+    margin-left: 150px;
 }
 
 .nav-li-col-mb {
     flex-basis: 70%;
     margin-top: 35px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .nav-li-col .icon {
@@ -168,6 +166,16 @@ img{
     color: #f2f2f2;
 }
 
+.hambar {
+    text-align: right;
+    margin-left: 30px;
+    margin-top: 0px;
+    display: none;
+}
+
+.open{
+    display: block;
+}
 
 /* section banner header */
 .container-banner {
@@ -363,7 +371,7 @@ h6.footer-title {
         flex-wrap: wrap;
     }
 
-    .nav-li-col a.text-hide {
+    .nav-li-col a.navbar-none {
         display: none;
     }
 
@@ -406,6 +414,15 @@ h6.footer-title {
 
     .content-flip-section {
         flex-direction: column-reverse;
+    }
+
+    .hambar {
+        display: block;
+    }
+
+    .logo-beeative{
+        width: 100%;
+        padding: 10px;
     }
 
 }
